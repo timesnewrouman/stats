@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stats</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <button class="header__button">+</button>
+    </header>
+    <div class="main root__section">
+      <div class="popup">
+        <div class="popup__content">
+          <img src="./images/close.svg" alt="" class="popup__close">
+          <h3 class="popup__title">Новый Персонаж</h3>
+          <form class="popup__form" name="add">
+            <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя Персонажа"
+              required maxlength="15" minlength="2">
+            <div class="race">
+              <input type="radio" id="ge" name="race" value="Golden Empire">
+              <label for="ge">Золотая Империя</label>
+              <input type="radio" id="oe" name="race" value="Old Empire">
+              <label for="oe">Старая Империя</label>
+              <input type="radio" id="nomad" name="race" value="Nomads">
+              <label for="nomad">Кочевники</label>
+              <input type="radio" id="north" name="race" value="Northerners">
+              <label for="north">Северяне</label>
+            </div>
+            <button type="submit" id="+" class="button popup__button">+</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='./js/Card.js'></script>
+  <script src='./js/CardList.js'></script>
+  <script src='./js/Popup.js'></script>
+  <script src='./js/script.js'></script>
+</body>
+
+</html>
